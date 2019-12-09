@@ -1,0 +1,55 @@
+*{margin: 0;padding: 0;}
+ul,li{list-style: none;}
+a{text-decoration: none;color: black;}
+a:hover{text-decoration: underline;color: black;}
+a:link{text-decoration: none;color: black;}
+a:visited{text-decoration: none;color: black;}
+body,html{
+    width: 100%;
+    height: 100%;
+    font-family: 
+}
+header{width: 1125px; margin: 0 auto;}
+header .top{width: 100%;height: 35px;margin: 8px 0 0 0;}
+header .top ul{float: right;margin: 8px 0 0 0; position: relative;}
+header .toptext{float: left; color: #7e7e7e; font-size: 10px; margin :3px 0 0 17px;}
+header .line{margin: 3px 0 0 17px;}
+header .line::after{content: "";display: block;float: right; height: 10px; width: 1px; background-color: #ababab; margin: 1px 0 0 17px;}
+header .last{margin: 3px 5px 0 13px; color: #444444;}
+header .img{margin: 0 4px 0 5px;  height: 18px;}
+
+header .main{width: 100%; height: 80px;}
+header .left{float: left;}
+header .left:nth-child(1){height: 60px;}
+header .left:nth-child(2){height: 25px; margin: 17px 0 9px 44px;}
+
+header .mid{float: left; margin: 21px 0 0 31px; font-size: 17px; color: black;}
+header .mid:nth-child(3){margin-left: 65px;}
+
+header .right{float: right; height: 28px; margin: 13px 0 0 22px;}
+
+.banner {position: relative; height: 520px; width: 1125px; margin: 0 auto; background-color: beige;}
+
+.banner .main{position: absolute;}
+.banner .input{padding: 98px 0 0 21px;}
+.banner .text{padding: 0 0 40px 0; font-size: 26px;}
+.banner .login{margin: 0 0 40px 0; height: 30px;}
+.banner .login>div{height: 28px; width: 141px; float: left; border-bottom: 2px solid black;}
+.banner .login>div:last-child{margin: 0 0 0 10px;}
+.banner .id{height: 16px; margin: 2px 0 0 6px; float: left;}
+.banner .pass{height: 18px; margin: 0 0 0 7px; float: left;}
+.banner .ltext{float:left; font-size : 13px;}
+.banner .btn{margin: 0 0 30px 0;}
+.banner .btn>div{float: left;}
+.banner .btn>div:last-child{float: none;}
+.banner .btn input[type="checkbox"]{position: absolute; left: -3000%;}
+.banner .btn input[type="checkbox"] + label{margin: 14px 36px 0 0;}
+.banner .btn input[type="checkbox"] + label:before{content: ""; display: inline-block; height: 20px;width: 20px; background: url(image/check_on.png) no-repeat center; position: relative; top: 8px; margin: 0 4px 4px 0; transition: all 0.5s; opacity: 0.4;}
+.banner .btn input[type="checkbox"]:checked + label:before{ opacity: 1;}
+.banner .btn_text{width: 500px; height: 13px; margin: 0 0 64px 0;}
+.banner .btn_text .text{font-size: 13px; position: relative; display: inline-block;}
+.banner .btn_text .text::after{content: ""; height: 10px; width: 1px; margin: 2px 12px 0;background-color: #aaaaaa;float: right;}
+.banner .btn_text a:last-child .text::after{width: 0;}
+.banner .sns{margin: 17px 0 0 0;}
+.banner .sns .text{display: inline-block; font-size: 14px; margin: 0 25px 0 0;}
+/*14 17*/

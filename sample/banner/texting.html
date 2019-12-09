@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<<<<<<< HEAD
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".btn").click(function() {
+                $(".testing").css({
+                    "background-color": "yellow",
+                    "font-size": "200%"
+                });
+            });
+        })
+    </script>
+    
+</head>
+
+<body>
+    
+    <img id="wall1" class="image" src="image/wall1.jpg" alt="dsffsd">
+    
+    <div class="testing">123</div>
+    <button class="btn">click</button>
+=======
+    <meta charset="UTF-8" />
+    <title>setInterval/clearInterval example</title>
+
+    <script>
+        var nIntervId;
+
+        function changeColor() {
+            nIntervId = setInterval(flashText, 1000);
+        }
+
+        function flashText() {
+            var oElem = document.getElementById('my_box');
+            oElem.style.color = oElem.style.color == 'red' ? 'blue' : 'red';
+            // oElem.style.color == 'red' ? 'blue' : 'red' is a ternary operator.
+        }
+
+        function stopTextColor() {
+            clearInterval(nIntervId);
+        }
+    </script>
+</head>
+
+<body onload="changeColor();">
+    <div id="my_box">
+        <p>Hello World</p>
+    </div>
+
+    <button onclick="stopTextColor();">Stop</button>
+>>>>>>> aeb82a1c314bda2867bbf21701a49f065132ac1e
+</body></html>

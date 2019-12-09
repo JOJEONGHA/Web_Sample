@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    height: 500px;
+    width: 100%;
+<<<<<<< HEAD
+    height: 700px;
+    background-color: aquamarine;
+    position: relative;
+}
+
+.container{
+    margin: 0 auto;
+/*    overflow: hidden;*/
+    width: 980px;
+=======
+}
+
+.view{
+>>>>>>> aeb82a1c314bda2867bbf21701a49f065132ac1e
+    height: 100%;
+    width: 500px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.container{
+    overflow: auto;
+    width: 1500px;
+    position: absolute;
+}
+
+.image{
+    float: left;
+    height: 500px;
+    width: 500px;
+}
+
+.btn{
+    position: absolute;
+    opacity: 0.6;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+.arrow{
+    position: absolute;
+    transform: translate(0,-50%);
+}
+
+.left{
+    left: 50px;
+    top: 50%;
+    opacity: 0.7;
+}
+.left:hover{
+    opacity: 0.5;
+}
+
+.right{
+    right: 50px;
+<<<<<<< HEAD
+    top: 50%;
+    opacity: 0.7;
+}
+.right:hover{
+    opacity: 0.5;
+}
+=======
+}
+
+>>>>>>> aeb82a1c314bda2867bbf21701a49f065132ac1e

@@ -1,0 +1,49 @@
+<!doctype html>
+
+<html>
+	<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: aquamarine;
+            margin: 5px;
+        }
+
+        .box:active:nth-child(3) {
+            background-color: red;
+        }
+
+        span {
+            display: block;
+            opacity: 0;
+            background: red;
+            width: 100px;
+            height: 50px;
+        }
+
+        section div:nth-child(2).on~span {
+            opacity: 1;
+        }
+        
+        section div{
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="box">
+        <div>wefw
+            </div></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <span></span>
+    </section>
+
+</body></html>

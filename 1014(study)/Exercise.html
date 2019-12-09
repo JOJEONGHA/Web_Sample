@@ -1,0 +1,68 @@
+<!doctype html>
+
+<html>
+	<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul,li{
+            list-style: none;
+        }
+        ul{
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+            
+            /*margin : 0 auto를 해서 좌우 중앙은 가능하나 세로 중앙은 임의로 margin값으로 수동조절 해줬어야 한다.*/
+            /*margin 음수를 해주지않으면 좌측 상단의 끝점이 중앙으로온다. 따라서 margin-top,left을 입력해서 좌측끝의 점을 중앙으로 이동하는 작업을 해줘야 한다.*/
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            /*margin-top: -250px;
+            margin-left: -250px;*/
+            /*가로세로의 길이 나누기 2 할필요 없이 translate를 사용해 주면 가능하다.(각도의 단위 deg)*/
+            transform: translate(-50%,-50%);
+            transition-duration: 1s;
+        }
+        ul:hover{
+            /*transform: rotate(-90deg);*/
+            /*크기 조절*/
+            /*transform: scale(2);*/
+            transform: skewX(20deg);
+        }
+        ul>li{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: aqua;
+        }
+        li#first{
+            background-color: aquamarine;
+            z-index: 4; /*임의로 층(z-index)를 지정해준다.*/
+        }
+        li#second{
+            background-color: cornflowerblue;
+        }
+        li#third{
+            background-color: darkmagenta;
+            z-index: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <!--z-index : layer 층 개념, 숫자가 클수록 더 위에 위치한다. 포토샵의 layer와 같은 개념-->
+        <!--기본 z-index 가 li순서대로 0~ 차차 높아진다-->
+        <li id = "first"></li>
+        <li id = "second"></li>
+        <li id = "third"></li>
+    </ul>
+</body></html>

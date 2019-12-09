@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif !important;
+}
+
+ul,li{
+    list-style: none;
+    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+}
+a{text-decoration: none;}
+
+/*top_nav----------------------------------------------------*/
+.menu{position: fixed; height: 70px; width: 100%; background-color: #464d94; overflow: hidden; z-index: 9999;}
+nav{ width: 1778px; margin: 0 auto; height: 70px;}
+.menu .logo{float: left; height: 34px; padding: 18px 0 0 0;}
+.menu .menu_text{float: right;}
+.menu .menu_text li{ font-size: 17px ; float: left; line-height: 70px; color: #ffffff; font-weight :700; padding : 0 65px 0 0; font-stretch: condensed; transform: scaleX(0.8);}
+.menu .line_box{width: 667px; height: 1px; float: right;margin: 35px 0 0 0; background-color: #c8cadf;}
+.menu .blog_logo{padding: 23px 0 0 43px; height: 26px; float: right;}
+
+/*banner------------------------------------------------------*/
+.banner{width: 100%; height: 871px; background-color: #464d94; position: relative; z-index: -1;}
+.banner .box{z-index: 5;}
+.banner .box1{background-color: #18cac2; position: absolute; width: 28.33%; height: 24.23%; left: 0; top: 386px;}
+.banner .box2{position: absolute; width: 67.68%; height: 86.45%; border: 26px solid #18cac2; top: 168px; right: 0; border-right: 0;}
+.banner .image_main{height: 77.15%; width: 71.67%; z-index: 10;position: absolute; top: 233px; right: 69px;}
+.banner .main_text span{color: #ffffff;  display: block;}
+.banner .text1{font-size: 77px; border: 900; z-index: 15; position: absolute; left: 184px; top: 344px;}
+.banner .text2{font-size: 37px; position: absolute; left: 333px; top : 650px; z-index: 15; font-weight: 500;}
+.banner .sub_text{position: absolute; left: 86px; bottom: 64px;}
+.banner .sub_text .scroll_line{background-color: #18cac2; height : 80px; width : 1px; margin : 0 5px 25px  7px;}
+.banner .sub_text>p{writing-mode: vertical-lr; color: #18cac2; font-size: 13px; font-weight : 600;}
+.banner .sub_text2{writing-mode: vertical-lr; color : #ffffff; font-weight: 900; font-size: 141px; position : absolute; left : 132px; bottom: -24px; opacity : 0.2;}
+
+/*main1------------------------------------------------------*/
+.main1{height: 924px; width: 100%;}
+.main1 .main{height: 100%; width: 1592px; margin: 0 auto; position: relative;}
+.main1 .title{ padding: 148px 0 0 1px; font-size: 64px; font-weight: 900; color: #4a579f; }
+.main1 .title>span{transform: scaleX(0.8);}
+.main1 .main_banner{      display: grid; margin: 82px 0 0 0; width: 1457px; grid-template-columns: repeat(3, 466px);grid-gap: 29px;}
+.main1 .option a>img{width: 466px; height: auto;}
+.main1 .option a>p{color: black; font-size: 36.4px; font-weight: 800; padding: 37px 0 22px 0;}
+.main1 .option a>p:last-child{font-size: 20.5px; font-weight: 600; color: #464646;}
+.main1 .right{position: absolute; top: 412px; right: 0;}
+
+/*news------------------------------------------------------*/
+.news{height: 828px; width: 100%; background-color: #fafafa;}
+.news .main{height: 100%; width: 1592px; margin: 0 auto; position: relative;}
+
+.news .left .title{ padding: 82px 0 0 1px; font-size: 64px; font-weight: 900; color: #4a579f; display: inline-block;}
+.news .left .title>span{transform: scaleX(0.8);}
+.news .main .left{width: 213px; height: 100%; float: left;}
+.news .main .right{height: 100%; overflow: hidden;}
+.news .right .line{width: 1207px;height: 4px; margin: 125px 0 0 0; background-color: #4a579f;}
+.news .right .items{display: grid; grid-template-columns: repeat(3,352px); grid-gap: 37px; margin: 67px 0 0 71px;}
+.news .right .item{height: 437px; background-color: white; position: relative;}
+.news .right .item span{display: block;}
+.news .right .item .i1{font-size: 64px; font-weight: 860; color: #18cac2; transform: scaleX(0.919); margin : 18px 0 0 10px;}
+.news .right .item .i2{font-size: 22px; color: #333333; margin : 0 0 0 30px;}
+.news .right .item .i3{color: #333333; margin: 20px 0 0 30px; font-size : 23px; font-weight : 800; letter-spacing : -3px;}
+.news .right .item .i4{color: #666666; margin : 17px 0 0 30px; font-size : 17px; letter-spacing : -3px;}
+.news .right .item .i5{float: right;color : #4a57b8; font-size : 14px; text-decoration: underline; position: absolute; bottom : 50px; right : 40px;}
+.news .arrow{position: absolute; bottom: 412px; right: 0;}
+
+/*footer------------------------------------------------------*/
+footer{height: 372px; width: 100%; background-color: white; position: relative;}
+.foot .first{height: 190px; width: 1180px; background-color: #5165af; position: absolute; top: -95px; left: 0;}
+.foot .second{height: 100px; width: 305px; background-color: #18cac2; position : absolute; left: 997px; top : -50px;}
+.foot .third{height: 100%; width: 1637px; background-color: #2b2b2b; float : right;}
+.foot .first>span{font-size: 44px; border: 100%; font-weight: 900; color: #ffffff; letter-spacing: -2px; line-height: 190px; text-align : center; padding: 0 0 0 531px;}
+.foot .second>span{font-size: 31px; font-weight: 900; letter-spacing: -2px; color: #ffffff; line-height: 100px; text-align : center; padding : 0 0 0 70px;}
+.foot .third .container{margin: 152px 0 0 120px; display: grid; grid-template-columns: repeat(4,344px); height: 1;}
+.foot .third .one>img{height: 34px; width: auto; margin: 28px 0 102px 0;}
+.foot .third .one>span{display: block; font-family: 'Roboto', sans-serif !important; color: #959595; font-size :15px; font-weight : 500; letter-spacing : 0px;} 
+.foot .third .two span{display: block;}
+.foot .third .two>span:nth-child(1){color: white; font-weight: 800; font-size: 23px; margin: 0 0 20px 0;}
+.foot .third .two>span:nth-child(2){color: #d5d5d5; font-size : 16px;}
+.foot .third .two>span:nth-child(3){color: #d5d5d5; font-size : 16px; margin: 3px 0 3px 0;}
+.foot .third .two>span:nth-child(4){color: #d5d5d5; font-size : 16px;}
+.foot .third .three span{display: block;}
+.foot .third .three>span:nth-child(1){color: white; font-weight: 800; font-size: 23px; margin: 0 0 20px 0;}
+.foot .third .three>span:nth-child(2){color: #d5d5d5; font-size : 16px; margin: 3px 0 3px 0;}
+.foot .third .three>span:nth-child(3){color: #d5d5d5; font-size : 16px;}
+.foot .third .four span{display: block;}
+.foot .third .four>span:nth-child(1){color: white; font-weight: 800; font-size: 23px; margin: 0 0 20px 0;}
+.foot .third .four>span:nth-child(2){color: #d5d5d5; font-size : 16px;}
+

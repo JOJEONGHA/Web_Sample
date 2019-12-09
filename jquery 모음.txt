@@ -1,0 +1,12 @@
+이거 끝나면 실행
+$.when($box1, $box2).then(function() {
+        alert("완료!");
+    });
+
+
+반복실행
+
+function loopBoat() {  
+      $boat.animate({ 'bottom' : '15px'}, 500)
+        .animate({ 'bottom' : '25px'}, 500, loopBoat);
+    }

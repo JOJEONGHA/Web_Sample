@@ -1,0 +1,89 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.slider').bxSlider();
+        });
+
+    </script>
+    <style>
+        .slider{
+            text-align: center;
+        }
+        .bx-wrapper{
+            position: relative;
+        }
+        .bx-controls-direction{
+            font-size: 100px;
+        }
+        .bx-controls-direction a{
+            position: absolute;
+            top: 50%;
+            transform : translateY(-50%);
+            display: block;
+            width: 100px;
+            height: 110px;
+            overflow: hidden;
+            color: #5a5a5a;    
+        }
+        .bx-controls-direction .bx-prev{left: 0;}
+        .bx-controls-direction .bx-next{right : 0;}
+        .bx-controls-direction .bx-prev::before {
+            content: "\e93d";
+            font-family: "xeicon";
+        }
+
+        
+        .bx-controls-direction .bx-next::before{
+            content: "\e940";
+            font-family: "xeicon";
+        }
+        .slider>div>img{
+            height: 500px;
+            width: 500px;
+        }
+        .bx-pager{
+            position: absolute;
+            bottom: -50px;
+            text-align: center;
+            left: 0;
+            width: 100%;
+        }
+        .bx-pager div{
+            display: inline-block;
+            
+        }
+        .bx-pager a{
+            display: block;
+            font-size: 0;
+            height: 15px;
+            width: 40px;
+            color: transparent;
+            background-color: #999;
+            margin: 5px;
+        }
+        
+        .bx-pager a.active{
+            background-color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slider">
+        <div><img src="image/image1.jpg" alt="123"></div>
+        <div><img src="image/image2.jpg" alt="123"></div>
+        <div><img src="image/image3.jpg" alt="123"></div>
+    </div>
+</body>
+
+</html>

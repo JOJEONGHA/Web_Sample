@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+/*6.5:1 view max 742px*/
+nav {
+    height: 96.9px;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+}
+
+div#top_menu {
+    height: 50px;
+    width: 67%;
+    margin: 0 auto;
+}
+
+div#top_menu > h3 {
+    display: inline-block;
+    color: white;
+    float: right;
+    line-height: 48.45px;
+    padding-left: 10px;
+}
+
+div#top_menu > h3:after {
+    content: "|";
+    float: right;
+    color: #979797;
+    padding-left: 10px;
+}
+
+section {
+    height: 100%;
+    width:
+}
+
+section#sec1 {
+    background-color: black;
+    width: 100%;
+    opacity: 0.5;
+    z-index: 1;
+    position: relative;
+}
+
+div#line_text {
+    width: auto;
+    bottom: 9%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, 0);
+}
+
+div#line_text > img {
+    width: 1700px;
+}
+
+section#sec2 {
+    padding: 100px
+}
+
+
+div#sec2_top {
+    display: grid;
+    align-content: center;
+    height: 200px;
+}
+
+div#sec2_top > h1 {
+    display: block;
+    width: auto;
+    text-align: center;
+}
+
+div#sec2_top > h2 {
+    display: block;
+    text-align: center;
+}
+
+div#sec2_main {
+    height: 80%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    animation-duration: 1s;
+    animation-name: sec2_main_any;
+}
+@keyframes sec2_main_any{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+div#sec2_imgbox {
+    position: relative;
+    
+}
+
+img#sec2_main_img {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+div#sec2_img_right_up {
+    padding: 3vw 3vw 10vw 3vw;
+    height: 60%;
+    width: 100%;
+}
+
+img#sec2_main_top_img {
+    margin-bottom: 4vh;
+}
+
+div#sec2_img_right_down {
+    position: relative;
+    width: 100%;
+    height: 40%;
+}
+
+div#sec2_img_right_down_detail {
+    position: absolute;
+    top: 4vw;
+    left: 3vw;
+    cursor: pointer;
+}
+
+div#sec2_img_right_down_btn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+}
+
+.btn {
+    border-left: 1px white solid;
+    float: left;
+    position: relative;
+    height: 5vw;
+    width: 5vw;
+    opacity: 0.9;
+    background-color: #18a27b;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+.btn > img {
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section#sec3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3.5fr;
+    grid-gap: 2vw;
+    padding: 3vw 10vw;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: dimgrey;
+}
+
+div#sec3_top{
+    grid-column: 1/4;
+    text-align: center;
+    position: relative;
+}
+
+div#sec3_top>div{
+    position: absolute;
+    height: 4rem;
+    width: 500px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    color: white;
+}
+
+.sec3_3box{
+    background-color: #dfdddd;
+    cursor: pointer;
+    position: relative;
+}
+.sec3_3box>div>h2{
+    text-align: center;
+}
+
+.sec3_3box_line{
+    height: 10px;
+    width: 3vw;
+    margin: 50px auto;
+    border-bottom: 1px solid black;
+}
+
+.sec3_3box:hover{
+    background-color: #18a27b;
+}
+
+.sec3_3box:hover #sec3_left_img{
+    content: url(img/cook_2.png);
+}
+.sec3_3box:hover .sec3_img{
+    display: block;
+    margin: 0 auto;
+    width: 4vw;
+}
+.sec3_3box:hover #sec3_left_text{
+    content: url(img/chef_house_2.PNG);
+}
+
+.sec3_3box:hover #sec3_middle_img{
+    content: url(img/leaf_2.png);
+}
+.sec3_3box:hover #sec3_middle_text{
+    content: url(img/ingredent_2.PNG);
+}
+
+.sec3_3box:hover #sec3_right_img{
+    content: url(img/handshake_2.png);
+}
+.sec3_3box:hover #sec3_right_text{
+    content: url(img/csr_2.PNG);
+}
+
+.sec3_3box_sub{
+    height: auto;
+    position: absolute;
+    width: 100%;
+/*    background-color: black;*/
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.sec3_img{
+    display: block;
+    margin: 0 auto;
+    width: 7vw;
+    transition: all 0.5s;
+}
+.sec3_detail{
+    display: none;
+    margin: 0 auto;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    bottom: 0px;
+    transition: translate 0.5s;
+}
+
+.sec3_3box:hover .sec3_detail{
+    display: block;
+    bottom: -150px;
+    margin-top: 50px;
+}
+
+.sec3_text{
+    display: block;
+    margin: 0 auto;
+}
+
+
+
