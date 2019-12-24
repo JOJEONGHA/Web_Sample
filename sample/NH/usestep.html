@@ -14,60 +14,73 @@
             .usestep_wrapper .main{height: 605px; width: 1185px; margin: 0 auto; position: relative;  }
             .usestep_wrapper .main .contents{width: 1185px;  height: 283px;position: absolute; top: 0; bottom: 0; margin: auto;}
             .usestep_wrapper .main .contents .set{height: 283px; float: left;display: block;}
-            .usestep_wrapper .main .contents .textset{width: 353px;}
-            .usestep_wrapper .main .contents .textset .title{display: block;font-size: 22px; color: #3e413e; font-weight: 200;}
+            .usestep_wrapper .main .contents .textset{width: 343px;}
+            .usestep_wrapper .main .contents .textset .title{display: block;font-size: 1.375em; color: #3e413e; font-weight: 200;}
             .usestep_wrapper .main .contents .textset .title + h1{font-size: 54px; margin: 12px 0 0 0;}
-            .usestep_wrapper .main .contents .textset .detail{display: block; font-size: 22px; color: #737573; margin: 41px 0 0 0; display: block; font-weight: 300;}
-            .usestep_wrapper .main .contents .iconset{}
-            .usestep_wrapper .main .contents .iconset .icon_container{display: block;float: left;}
-            .usestep_wrapper .main .contents .iconset .icon_container span{display: block;}
+            .usestep_wrapper .main .contents .textset .detail{display: block; font-size: 1.375em; color: #737573; margin: 41px 0 0 0; display: block; font-weight: 300;}
+            .usestep_wrapper .main .contents .iconset{width: calc(100% - 343px);}
+            .usestep_wrapper .main .contents .iconset .icon_container{position: relative;display: block;float: left; width: 210px; height: 100%;}
+            .usestep_wrapper .main .contents .iconset .icon_container::after{content: ""; display: block; position: absolute; top: 50%; right: 0; transform : translate(0,-50%); background: url(img/step_arr.png) no-repeat 0 0; width: 17px; height: 34px; background-size: 100%;}
+            .usestep_wrapper .main .contents .iconset .icon_container span{display: block;  text-align: center;}
+            .usestep_wrapper .main .contents .iconset .icon_container .top{color: #0033b0;}
+            .usestep_wrapper .main .contents .iconset .icon_container .step{font-size: 1.156em; font-weight: 300;}
+            .usestep_wrapper .main .contents .iconset .icon_container .num{margin: -2px 0 0 0; font-size: 1.531em; font-weight: 600;}
+            .usestep_wrapper .main .contents .iconset .icon_container .text{font-size: 1.156em;border: 500;}
+            .usestep_wrapper .main .contents .iconset .icon_container .icon{height: 100px; width: 100px; background: url(img/step_iconset.png) no-repeat 0 0; background-size: auto 100px; margin: 32px auto 0; }
+            .usestep_wrapper .main .contents .iconset .icon_container .icon + .text{margin: 43px 0 0 0;}
+            .usestep_wrapper .main .contents .iconset .icon_container.no1 .icon{}
+            .usestep_wrapper .main .contents .iconset .icon_container.no2 .icon{background-position: -100px 0;}
+            .usestep_wrapper .main .contents .iconset .icon_container.no3 .icon{background-position: -200px 0;}
+            .usestep_wrapper .main .contents .iconset .icon_container.no4 .icon{background-position: -300px 0;}
+            .usestep_wrapper .main .contents .iconset .icon_container.no4::after{display: none;}
+            
         </style>
 	</head>
     
 	<body>
-        <session class = "usestep_wrapper">
+        <section class = "usestep_wrapper">
             <div class="main">
                 <div class="contents">
-                    <div class="textset set line_test">
+                    <div class="textset set">
                         <span class = "title">NH오픈플랫폼</span>
                         <h1>이용절차</h1>
                         <span class = "detail">
                             다양한 오픈소스로<br>간편하게 개발하실 수 있도록<br>실시간으로 지원합니다.
                         </span>
                     </div>
-                    <ul class="iconset set line_test">
+                    <ul class="iconset set">
                         <li class="icon_container no1">
-                            <span class="step">STEP</span>
-                            <span class="num">01</span>
+                            <span class="step top">STEP</span>
+                            <span class="num top">01</span>
                             <div class="icon"></div>
-                            <span class="text">개발자센터 회원가입 및<br></span>
+                            <span class="text">개발자센터 회원가입 및</span>
                             <span class="text">테스트 인증키발급</span>
                         </li>
                         <li class="icon_container no2">
-                            <span class="step">STEP</span>
-                            <span class="num">02</span>
+                            <span class="step top">STEP</span>
+                            <span class="num top">02</span>
                             <div class="icon"></div>
-                            <span class="text">API개발 및<br></span>
+                            <span class="text">API개발 및</span>
                             <span class="text">테스트</span>
                         </li>
                         <li class="icon_container no3">
-                            <span class="step">STEP</span>
-                            <span class="num">03</span>
+                            <span class="step top">STEP</span>
+                            <span class="num top">03</span>
                             <div class="icon"></div>
-                            <span class="text">핀테크 오픈플랫폼<br></span>
+                            <span class="text">핀테크 오픈플랫폼</span>
                             <span class="text">서비스약정</span>
                         </li>
                         <li class="icon_container no4">
-                            <span class="step">STEP</span>
-                            <span class="num">04</span>
+                            <span class="step top">STEP</span>
+                            <span class="num top">04</span>
                             <div class="icon"></div>
-                            <span class="text">실보안인증키 발급 및<br></span>
+                            <span class="text">실보안인증키 발급 및</span>
                             <span class="text">운영적용단계</span>
                         </li>
                     </ul>
                 </div>
             </div>
-        </session>
+        </section>
 	</body>
 </html>
 
