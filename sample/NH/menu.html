@@ -1,0 +1,42 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <style>
+        ul,li{list-style: none;}
+        a{text-decoration: none; color: black;}
+        *{margin: 0; padding: 0; font-family: ""; font-family: 'Noto Sans KR', sans-serif;}
+        .main_menuset {height: 80px; width: 100%; position: relative; background: url("img/main_visual_bg.png") no-repeat 0 0; clear: both;}
+        .main_menuset .logo{float: left; margin: 32px 0 0 30px; height: 21px; width: 150px; background: url(img/logo.png) no-repeat 0 0; }
+        .main_menuset .textset{height: 100%; line-height: 80px; font-size: 16px; position: absolute; left: 50%; transform: translate(-50%,0);}
+        .main_menuset .textset li{display: inline-block; margin: 0 40px 0 40px;  color: #b4c0da;}
+        .main_menuset .loginset{height: 100%; float: right;}
+        .main_menuset .loginset .set{float: left;}
+        .main_menuset .loginset .set.login{height: 40px; width: 40px; background: url("img/lock.png") no-repeat 0 0; margin: 20px 17px 0 0;}
+        .main_menuset .loginset .set.menu{height: 18px; width: 23px; background: url("img/menu.png") no-repeat 0 0; margin: 32px 30px 0 0;}
+    </style>
+</head>
+
+<body>
+    <nav class="main_menuset">
+        <a href="#"><div class="logo"></div></a>
+        <div class="textset">
+            <ul>
+                <a href="#"><li>개발자센터 소개</li></a>
+                <a href="#"><li>API소개</li></a>
+                <a href="#"><li>API개발가이드</li></a>
+                <a href="#"><li>REST API도구</li></a>
+                <a href="#"><li>개발자 포럼</li></a>
+            </ul>
+        </div>
+        <div class="loginset">
+            <a href="#"><div class="set login"></div></a>
+            <a href="#"><div class="set menu"></div></a>
+        </div>
+    </nav>
+</body>
+</html>
