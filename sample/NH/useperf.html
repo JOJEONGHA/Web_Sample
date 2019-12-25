@@ -1,0 +1,158 @@
+<!doctype html>
+
+<html>
+	<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="default.css">
+    <style>
+        .testline {
+            border: 1px solid red;
+        }
+
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        session.useperf {
+            display: block;
+            width: 100%;
+            height: 715px;
+        }
+
+        session.useperf .main {
+            margin: 285px auto 0px;
+            height: 261px;
+            width: 1220px;
+        }
+
+        session.useperf .main .txtset {
+            float: left;
+            width: 388px;
+            height: 100%;
+        }
+
+        session.useperf .main .txtset .txt {
+            display: block;
+        }
+
+        session.useperf .main .txtset .txt.no1 {
+            font-size: 1.281em;
+            color: #294142;
+        }
+
+        session.useperf .main .txtset .txt.title {
+            margin: -10px 0 0 3px;
+            font-size: 3.469em;
+            color: #000000;
+        }
+
+        session.useperf .main .txtset .txt.no2 {
+            margin: 31px 0 0 0;
+            font-size: 1.312em;
+            color: #666666;
+        }
+
+        session.useperf .main .txtset .txt.no3 {
+            margin: 42px 0 0 0;
+            font-size: 1.081em;
+            color: #666866;
+        }
+
+        session.useperf .main .statisset .circle {
+            width: 250px;
+            height: 250px;
+            border-radius: 5000px;
+            border: 3px solid #003399;
+            float: left;
+            position: relative;
+        }
+
+        session.useperf .main .statisset .circle::before {
+            content: "";
+            display: block;
+            height: 228px;
+            width: 228px;
+            border: 1px solid #e6e6e6;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            border-radius: 5000px;
+        }
+
+        session.useperf .main .statisset div.circle+div {
+            margin: 0 0 0 31px;
+        }
+        session.useperf .main .statisset .circle .contents{
+            text-align: center;
+        }
+
+        session.useperf .main .statisset .circle .contents>span {
+            display: block;
+        }
+
+        session.useperf .main .statisset .circle .contents .num {
+            font-size: 52px;
+            font-weight: 600;
+            margin: 64px 0 0 0;
+            color: #003399;
+            line-height: 67px;
+            vertical-align: top;
+            padding:  0 0 7px 0;
+            position: relative;
+        }
+        session.useperf .main .statisset .circle .contents .num::before{
+            content: "";
+            display: block;
+            background: #e5e5e5;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            height: 1px;
+            width: 24px;
+            transform: translate(-50%, 0);
+        }
+        session.useperf .main .statisset .circle .contents .text{
+            color: #000000;
+            margin: 18px 0 0 0;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+
+<body>
+    <session class="useperf">
+        <div class="main">
+            <div class="txtset">
+                <span class="txt no1">Today개발자센터</span>
+                <h1 class="txt title">이용실적</h1>
+                <span class="txt no2">개발자센터에서 제공하는 API<br>이용실적입니다.</span>
+                <span class="txt no3">기준일지 2019/12/20 00:00</span>
+            </div>
+            <div class="statisset">
+                <div class="circle no1">
+                    <div class="contents">
+                        <span class="num">52</span>
+                        <span class="text">회원수</span>
+                    </div>
+                </div>
+                <div class="circle no2">
+                    <div class="contents">
+                        <span class="num">883</span>
+                        <span class="text">이용건수</span>
+                    </div>
+                </div>
+                <div class="circle no3">
+                    <div class="contents">
+                        <span class="num">39</span>
+                        <span class="text">1일API처리량</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </session>
+</body></html>

@@ -1,0 +1,275 @@
+/*menu--------------------------------------*/
+.main_menuset {
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    background: url("img/main_visual_bg.png") no-repeat 0 0;
+    clear: both;
+}
+
+.main_menuset .logo {
+    float: left;
+    margin: 32px 0 0 30px;
+    height: 21px;
+    width: 150px;
+    background: url(img/logo.png) no-repeat 0 0;
+}
+
+.main_menuset .textset {
+    height: 100%;
+    line-height: 80px;
+    font-size: 16px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.main_menuset .textset li {
+    display: inline-block;
+    margin: 0 40px 0 40px;
+    color: #b4c0da;
+}
+
+.main_menuset .loginset {
+    height: 100%;
+    width: 110px;
+    float: right;
+}
+
+.main_menuset .loginset .set {
+    float: left;
+}
+
+.main_menuset .loginset .set.login {
+    height: 40px;
+    width: 40px;
+    background: url("img/lock.png") no-repeat 0 0;
+    margin: 20px 17px 0 0;
+}
+
+.main_menuset .loginset .set.menu {
+    height: 18px;
+    width: 23px;
+    background: url("img/menu.png") no-repeat 0 0;
+    margin: 32px 30px 0 0;
+}
+
+/*midmenu--------------------------------*/
+.background_menu {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(img/main_visual_bg.png) no-repeat 0 0;
+    background-size: auto 942px;
+    background-position: -536px 0;
+}
+
+.mid_menuset {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 1353.5px;
+    height: 230px;
+    background-color: white;
+    box-shadow: 1px 1px 5px #e4e4e4, -1px -1px 5px #e4e4e4;
+}
+
+.mid_menuset .menuset .menu {
+    position: relative;
+    height: 200px;
+    display: inline-block;
+    float: left;
+    padding: 30px 54px 0 31px;
+    border-right: 1px solid #f5f5f5;
+}
+
+.mid_menuset .menuset .menu.no5 {
+    border: 1px solid white;
+    border-left: 0px solid white;
+}
+
+.mid_menuset .menuset .menu h1 {
+    font-size: 22px;
+    margin: 0 0 20px 0;
+}
+
+.mid_menuset .menuset .menu span {
+    font-size: 15.5px;
+}
+
+.mid_menuset .menuset .menu .img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-size: 100%;
+}
+
+.mid_menuset .menuset .menu.no1 .img {
+    width: 55px;
+    height: 54px;
+    background: url("img/menu1.png") no-repeat 0 0;
+    margin: 0 36px 26px 0;
+}
+
+.mid_menuset .menuset .menu.no2 .img {
+    width: 66px;
+    height: 66px;
+    background: url("img/menu2.png") no-repeat 0 0;
+    margin: 0 30px 20px 0;
+}
+
+.mid_menuset .menuset .menu.no3 .img {
+    width: 65px;
+    height: 66px;
+    background: url("img/menu3.png") no-repeat 0 0;
+    margin: 0 31px 22px 0;
+}
+
+.mid_menuset .menuset .menu.no4 .img {
+    width: 67px;
+    height: 66px;
+    background: url("img/menu4.png") no-repeat 0 0;
+    margin: 0 30px 20px 0;
+}
+
+.mid_menuset .menuset .menu.no5 .img {
+    width: 56px;
+    height: 66px;
+    background: url("img/menu5.png") no-repeat 0 0;
+    margin: 0 36px 20px 0;
+}
+
+.mid_menuset .menuset .menu:hover {
+    border: 1px solid #78c7ff;
+    box-shadow: 1px 1px 15px #b3baca, -1px -1px 15px #b3baca;
+}
+
+.mid_menuset .menuset .menu:hover .img {
+    width: 50px;
+    height: 40px;
+    margin: 0 38px 33px 0;
+    background: url("img/arr.png") no-repeat 0 0;
+}
+
+/*userPerformance-----------------------------------------*/
+.userperfomance {
+    width: 100%;
+    height: 893px;
+    background: url(img/sitemap_bg.png) no-repeat 0 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-size: auto 942px;
+    background-position: -107px -746px;
+}
+
+.useperf {
+    display: block;
+    width: 100%;
+    height: 715px;
+    padding: 354px 0 0 0;
+}
+
+.useperf .main {
+    margin: 0px auto 0px;
+    height: 261px;
+    width: 1220px;
+}
+
+.useperf .main .txtset {
+    float: left;
+    width: 388px;
+    height: 100%;
+}
+
+.useperf .main .txtset .txt {
+    display: block;
+}
+
+.useperf .main .txtset .txt.no1 {
+    font-size: 1.281em;
+    color: #294142;
+}
+
+.useperf .main .txtset .txt.title {
+    margin: -10px 0 0 3px;
+    font-size: 3.469em;
+    color: #000000;
+}
+
+.useperf .main .txtset .txt.no2 {
+    margin: 31px 0 0 0;
+    font-size: 1.312em;
+    color: #666666;
+}
+
+.useperf .main .txtset .txt.no3 {
+    margin: 42px 0 0 0;
+    font-size: 1.081em;
+    color: #666866;
+}
+
+.useperf .main .statisset .circle {
+    width: 250px;
+    height: 250px;
+    border-radius: 5000px;
+    border: 3px solid #003399;
+    float: left;
+    position: relative;
+}
+
+.useperf .main .statisset .circle::before {
+    content: "";
+    display: block;
+    height: 228px;
+    width: 228px;
+    border: 1px solid #e6e6e6;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 5000px;
+}
+
+.useperf .main .statisset div.circle + div {
+    margin: 0 0 0 31px;
+}
+
+.useperf .main .statisset .circle .contents {
+    text-align: center;
+}
+
+.useperf .main .statisset .circle .contents > span {
+    display: block;
+}
+
+.useperf .main .statisset .circle .contents .num {
+    font-size: 52px;
+    font-weight: 600;
+    margin: 64px 0 0 0;
+    color: #003399;
+    line-height: 67px;
+    vertical-align: top;
+    padding: 0 0 7px 0;
+    position: relative;
+}
+
+.useperf .main .statisset .circle .contents .num::before {
+    content: "";
+    display: block;
+    background: #e5e5e5;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    height: 1px;
+    width: 24px;
+    transform: translate(-50%, 0);
+}
+
+.useperf .main .statisset .circle .contents .text {
+    color: #000000;
+    margin: 18px 0 0 0;
+    font-size: 1.2em;
+}
