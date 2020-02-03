@@ -1,7 +1,32 @@
-container {display: block; font-family: 'Noto Sans', sans-serif;}
+.testline{ border: 1px solid red; }
+.testbg{background: red;}
 
-header{display: block; height: 76px; width: 1570px; margin : 0 auto; border: 1px solid red;}
+container {display: block; font-family: 'Noto Sans', sans-serif; width: 1570px; margin : 62px auto 0;}
+
+header{display: block; height: 76px; width: 100%; }
 header .logo {float: left; margin: 14px 0 0 60px;}
 header .logo > a{ height: 47px; width: 254px;}
-header .logo > a > span{ font-size: 1em; }
-header .menu_name {float: right;}
+header .menu_name {float: right; height: 100%;}
+header .menu_name > span{display: block; font-size: 1em; word-spacing: 8px; letter-spacing: 10px; font-weight: 700; margin: 27px 60px 0 0; }
+section.main {display : flex; width: 100%; height: 755px;}
+section.main .right_area{flex: 1;}
+section.main .right_area{position: relative; overflow: hidden;}
+section.main .right_area .bg{background: url("../img/intro_graybg.jpg") no-repeat 0 0;position: absolute; left: -30px; top: -110px;}
+section.main .right_area > span{position: absolute; z-index: 1;}
+section.main .right_area .text{padding-left: 60px;}
+section.main .right_area .title_1{font-size: 2.3em; font-weight: 300; padding-top: 180px;}
+section.main .right_area .title_1 > strong{font-weight: 900; color: #3f81e4;}
+section.main .right_area .title_2{font-size: 2.7em; font-weight: 400; padding-top: 220px;}
+section.main .right_area .subTitle{display: block; width: 100%; font-size: 1.3em; color: #747474; letter-spacing: 5px; padding : 660px 0 65px 0; text-align: center;}
+section.main >a {overflow: hidden; display: block; position: relative;}
+section.main >a .country{width: 199px; height: 100%; background: url("../img/countrySet.jpg") no-repeat 0 0;}
+section.main >a .country + .country{margin: 0 0 0 1px;}
+section.main >a:nth-child(2) .country{background-position: 0 0;}
+section.main >a:nth-child(3) .country{background-position: -200px 0;}
+section.main >a:nth-child(4) .country{background-position: -400px 0;}
+section.main >a:nth-child(5) .country{background-position: -600px 0;}
+section.main >a:nth-child(6) .country{background-position: -800px 0;}
+section.main >a .bluebg{position: absolute; left: 0; top: 530px; z-index: 1;}
+
+
+
